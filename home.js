@@ -1,7 +1,14 @@
 const validPin = 1234;
 
 
-// function to get input values
+// function to get input value
+
+function getInputValue(id){
+    return document.getElementById(id).value;
+}
+
+
+// function to get input value number
 function getInputValueNumber(id){
     // const inputField = document.getElementById(id);
     // const inputFieldValue = inputField.value;
@@ -9,7 +16,7 @@ function getInputValueNumber(id){
 
 
     return parseInt(document.getElementById(id).value);
-}
+} 
 
 
 // add money part
@@ -17,9 +24,9 @@ function getInputValueNumber(id){
 document.getElementById('add-money-btn').addEventListener('click', function(e){
     e.preventDefault();
     // console.log('clicked')
-    const bank = document.getElementById('bank').value;
+    const bank = getInputValue('bank');
 
-    const accountNumber = document.getElementById('account-number').value;
+    const accountNumber = getInputValue('account-number');
     if(accountNumber.length < 11){
         alert('please provide a valid account number');
         return;
@@ -57,7 +64,7 @@ document.getElementById('withdraw-btn').addEventListener('click', function(e){
     e.preventDefault();
     // console.log('withdraw clicked')
 
-    const agentNumber = document.getElementById('agent-number').value;
+    const agentNumber = getInputValue('agent-number');
     if(agentNumber.length < 11){
         alert('Please provide a valid agent number');
         return;
