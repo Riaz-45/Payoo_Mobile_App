@@ -17,7 +17,8 @@
 <!-- Font awesome cdn -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-[#f4f5f7] h-screen outfit">
+<body class="bg-[#f4f5f7] outfit">
+
     <div class="max-w-lg mx-auto bg-white p-6 rounded-2xl">
         <nav class="bg-white border-b-2 p-5 border-[rgba(8,8,8,0.1)] min-h-[50px] flex justify-between items-center">
             <div class="flex items-center justify-center p-1.6 gap-2">
@@ -74,5 +75,31 @@
             
         </div>
     </div>
+
+
+    <h3 class="max-w-lg mx-auto my-8 font-bold text-xl">Add Money</h3>
+
+    <form class="bg-white max-w-lg mx-auto p-6 rounded-2xl">
+        <label class="font-medium text-[16px]" for="">Select A Bank</label> <br>
+        <select class="select select-neutral input border-0 h-[50px] mt-4 w-full rounded-4xl bg-[#F4F5F7]">
+            <option disabled selected>Select Bank</option>
+            <option>DBBL</option>
+            <option>Sonali Bank</option>
+            <option>Trust Bank</option>
+        </select>
+        <div class="mt-4">
+            <label class="font-medium text-[16px]" for="">4 Bank Account Number</label> <br>
+            <input id="pin-number" type="text" placeholder="Enter 11 digit account number" class="input border-0 h-[50px] mt-4 w-full rounded-4xl bg-[#F4F5F7]" /> <br>
+        </div>
+        <div class="">
+            <label class="font-medium text-[16px]" for="">Amount to Add</label> <br>
+            <input id="mobile-number" type="text" placeholder="Add amount to withdraw" class="input border-0 h-[50px] mt-4 w-full rounded-4xl bg-[#F4F5F7]" /> <br>
+        </div>
+        <div class="mt-4">
+            <label class="font-medium text-[16px]" for="">Pin Number</label> <br>
+            <input id="pin-number" type="text" placeholder="Enter 4 DIgit Pin Number" class="input border-0 h-[50px] mt-4 w-full rounded-4xl bg-[#F4F5F7]" /> <br>
+        </div>
+        <button id="login-btn" class="btn outfit btn-active btn-primary border-0 text-white h-[50px] mt-4 w-full font-semibold text-[18px] rounded-4xl bg-[#0874F2]">Add Money</button>
+    </form>
 </body>
 </html>
