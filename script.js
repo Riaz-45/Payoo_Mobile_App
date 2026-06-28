@@ -14,6 +14,7 @@ document.getElementById('login-btn').addEventListener('click',  function(e){
     // console.log(mobileNumberValueConverted, pinNumberValueConverter);
 
     if(mobileNumberValueConverted === mobileNumber && pinNumberValueConverter === pinNumber){
+        // move to home.html file
         window.location.href = "./home.html"
     }else{
         alert('Invalid credentials');
