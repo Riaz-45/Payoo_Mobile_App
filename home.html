@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- add daisyUI-css -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- add tailwindcss -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- add css link -->
+    <link rel="stylesheet" href="tailwind.css">
+    <!-- Outfit font add -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<!-- Font awesome cdn -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-[#f4f5f7] h-screen outfit">
+    <div class="max-w-lg mx-auto bg-white p-6 rounded-2xl">
+        <nav class="bg-white border-b-2 p-5 border-[rgba(8,8,8,0.1)] min-h-[50px] flex justify-between items-center">
+            <div class="flex items-center justify-center p-1.6 gap-2">
+                <img class="h-[50px] w-[50px]" src="assets/Group.png" alt="">
+                <div>
+                    <h2 class="font-extrabold text-[18px]">$<span>45000</span></h2>
+                    <p class="text-[rgba(8,8,8,0.5)]">Available Balance</p>
+                </div>
+            </div>
+
+            <div>
+                <button class="flex justify-center items-center gap-2 p-2.5  rounded-lg border-2 border-[rgba(8,8,8,0.1)] text-[rgba(8,8,8,0.5)]">
+                    <i class="fa-solid fa-right-from-bracket rotate-180 text-center"></i>
+                log out
+                </button>
+            </div>
+        </nav>
+
+        <div class="bg-white mt-8">
+            <h1 class="font-extrabold text-[24px]">🔥Welcome to Payoo!</h1>
+            <p class="text-[rgba(8,8,8,0.5)] mt-3 text-[15px]">Enjoy easy and convenient financial services with us.<br> Cashout charge is low and </p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-[17px] mt-6">
+            <div class="border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] flex flex-col justify-center items-center">
+                <img class="h-[23px] w-[23px]" src="assets/wallet1.png" alt="">
+                <p class="mt-2 text-[15px] text-[rgba(8,8,8,0.7)]">Add Money</p>
+            </div>
+
+            <div class="border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] flex flex-col justify-center items-center">
+                <img class="h-[23px] w-[23px]" src="assets/send1.png" alt="">
+                <p class="mt-2 text-[15px] text-[rgba(8,8,8,0.7)]">Cashout</p>
+            </div>
+
+            <div class="border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] flex flex-col justify-center items-center">
+                <img class="h-[23px] w-[23px]" src="assets/money1.png" alt="">
+                <p class="mt-2 text-[15px] text-[rgba(8,8,8,0.7)]">Transfer Money</p>
+            </div>
+
+            <div class="border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] flex flex-col justify-center items-center">
+                <img class="h-[23px] w-[23px]" src="assets/bonus1.png" alt="">
+                <p class="mt-2 text-[15px] text-[rgba(8,8,8,0.7)]">Get Bonus</p>
+            </div>
+
+            <div class="border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] flex flex-col justify-center items-center">
+                <img class="h-[23px] w-[23px]" src="assets/purse1.png" alt="">
+                <p class="mt-2 text-[15px] text-[rgba(8,8,8,0.7)]">Pay Bills</p>
+            </div>
+
+            <div class="border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] flex flex-col justify-center items-center">
+                <img class="h-[23px] w-[23px]" src="assets/transaction1.png" alt="">
+                <p class="mt-2 text-[15px] text-[rgba(8,8,8,0.7)]">Transactions</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
