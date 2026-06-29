@@ -136,16 +136,63 @@
         <!-- Transfer Money part -->
          <div id="transfer-money-parent" class="form" style="display: none;">
             <h3 class="max-w-lg mx-auto my-8 font-bold text-xl">Transfer Money</h3>
+            <form class="bg-white p-6 rounded-2xl">
+                
+                <div class="mt-4">
+                    <label class="font-medium text-[16px]" for="">User Account Number</label> <br>
+                    <input id="agent-number" type="text" placeholder="Enter 11 digit number" class="input border-0 h-[50px] mt-4 w-full rounded-4xl bg-[#F4F5F7]" /> <br>
+                </div>
+                <div class="">
+                    <label class="font-medium text-[16px]" for="">Amount</label> <br>
+                    <input id="cash-out-amount" type="text" placeholder="Enter amount to transfer" class="input border-0 h-[50px] mt-4 w-full rounded-4xl bg-[#F4F5F7]" /> <br>
+                </div>
+                <div class="mt-4">
+                    <label class="font-medium text-[16px]" for="">Pin Number</label> <br>
+                    <input id="withdraw-pin" type="text" placeholder="Enter 4 DIgit Pin Number" class="input border-0 h-[50px] mt-4 w-full rounded-4xl bg-[#F4F5F7]" /> <br>
+                </div>
+                <button id="withdraw-btn" class="btn outfit btn-active btn-primary border-0 text-white h-[50px] mt-4 w-full font-semibold text-[18px] rounded-4xl bg-[#0874F2]">Send Now</button>
+            </form>
          </div>
 
         <!-- Get Bonus part -->
          <div id="get-bonus-parent" class="form" style="display: none;">
             <h3 class="max-w-lg mx-auto my-8 font-bold text-xl">Get Bonus</h3>
+            <form class="bg-white p-6 rounded-2xl">
+                
+                <div class="mt-4">
+                    <label class="font-medium text-[16px]" for="">Enter Bonus Coupon</label> <br>
+                    <input id="agent-number" type="text" placeholder="Entre your coupon" class="input border-0 h-[50px] mt-4 w-full rounded-4xl bg-[#F4F5F7]" /> <br>
+                </div>
+                
+                <button id="withdraw-btn" class="btn outfit btn-active btn-primary border-0 text-white h-[50px] mt-4 w-full font-semibold text-[18px] rounded-4xl bg-[#0874F2]">Get Bonus</button>
+            </form>
          </div>
 
         <!-- Pay Bill part -->
          <div id="pay-bill-parent" class="form" style="display: none;">
             <h3 class="max-w-lg mx-auto my-8 font-bold text-xl">Pay Bill</h3>
+            <form class="bg-white p-6 rounded-2xl">
+                <label class="font-medium text-[16px]" for="">Select to pay</label> <br>
+                <select id="bank" class="select select-neutral input border-0 h-[50px] mt-4 w-full rounded-4xl bg-[#F4F5F7]">
+                    <option disabled selected>Select Bank</option>
+                    <option>DBBL</option>
+                    <option>Sonali Bank</option>
+                    <option>Trust Bank</option>
+                </select>
+                <div class="mt-4">
+                    <label class="font-medium text-[16px]" for="">Biller Account Number</label> <br>
+                    <input id="account-number" type="text" placeholder="Enter account number" class="input border-0 h-[50px] mt-4 w-full rounded-4xl bg-[#F4F5F7]" /> <br>
+                </div>
+                <div class="">
+                    <label class="font-medium text-[16px]" for="">Amount to Pay</label> <br>
+                    <input id="add-amount" type="text" placeholder="Add amount to pay" class="input border-0 h-[50px] mt-4 w-full rounded-4xl bg-[#F4F5F7]" /> <br>
+                </div>
+                <div class="mt-4">
+                    <label class="font-medium text-[16px]" for="">Pin Number</label> <br>
+                    <input id="add-pin" type="text" placeholder="Enter 4 DIgit Pin Number" class="input border-0 h-[50px] mt-4 w-full rounded-4xl bg-[#F4F5F7]" /> <br>
+                </div>
+                <button id="add-money-btn" class="btn outfit btn-active btn-primary border-0 text-white h-[50px] mt-4 w-full font-semibold text-[18px] rounded-4xl bg-[#0874F2]">Pay Now</button>
+            </form>
          </div>
 
         <!-- Transaction part -->
