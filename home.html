@@ -48,32 +48,32 @@
 
         <!-- cart section -->
         <div class="grid grid-cols-3 gap-[17px] mt-6">
-            <div id="addMoney-btn" class="border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] flex flex-col justify-center items-center">
+            <div id="addMoney-btn" class="form-btn border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] cursor-pointer flex flex-col justify-center items-center">
                 <img class="h-[23px] w-[23px]" src="assets/wallet1.png" alt="">
                 <p class="mt-2 text-[15px] text-[rgba(8,8,8,0.7)]">Add Money</p>
             </div>
 
-            <div id="cash-out-btn" class="border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] flex flex-col justify-center items-center">
+            <div id="cash-out-btn" class="form-btn border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] cursor-pointer flex flex-col justify-center items-center">
                 <img class="h-[23px] w-[23px]" src="assets/send1.png" alt="">
                 <p class="mt-2 text-[15px] text-[rgba(8,8,8,0.7)]">Cashout</p>
             </div>
 
-            <div class="border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] flex flex-col justify-center items-center">
+            <div id="transfer-money-btn" class="form-btn border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] cursor-pointer flex flex-col justify-center items-center">
                 <img class="h-[23px] w-[23px]" src="assets/money1.png" alt="">
                 <p class="mt-2 text-[15px] text-[rgba(8,8,8,0.7)]">Transfer Money</p>
             </div>
 
-            <div class="border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] flex flex-col justify-center items-center">
+            <div id="get-bonus-btn" class="form-btn border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] cursor-pointer flex flex-col justify-center items-center">
                 <img class="h-[23px] w-[23px]" src="assets/bonus1.png" alt="">
                 <p class="mt-2 text-[15px] text-[rgba(8,8,8,0.7)]">Get Bonus</p>
             </div>
 
-            <div class="border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] flex flex-col justify-center items-center">
+            <div id="pay-bill-btn" class="form-btn border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] cursor-pointer flex flex-col justify-center items-center">
                 <img class="h-[23px] w-[23px]" src="assets/purse1.png" alt="">
                 <p class="mt-2 text-[15px] text-[rgba(8,8,8,0.7)]">Pay Bills</p>
             </div>
 
-            <div class="border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] flex flex-col justify-center items-center">
+            <div id="transaction-btn" class="form-btn border-2 border-[rgba(8,8,8,0.1)] rounded-xl py-5 px-[26px] cursor-pointer flex flex-col justify-center items-center">
                 <img class="h-[23px] w-[23px]" src="assets/transaction1.png" alt="">
                 <p class="mt-2 text-[15px] text-[rgba(8,8,8,0.7)]">Transactions</p>
             </div>
@@ -86,7 +86,7 @@
     <div class="all-form-sections max-w-lg mx-auto">
 
         <!-- add money part -->
-        <div id="add-money-parent">
+        <div id="add-money-parent" class="form">
             <h3 class="max-w-lg mx-auto my-8 font-bold text-xl">Add Money</h3>
             <form class="bg-white p-6 rounded-2xl">
                 <label class="font-medium text-[16px]" for="">Select A Bank</label> <br>
@@ -113,7 +113,7 @@
         </div>
 
         <!-- cash out part -->
-        <div id="cash-out-parent" style="display: none;">
+        <div id="cash-out-parent" class="form" style="display: none;">
             <h3 class="max-w-lg mx-auto my-8 font-bold text-xl">Cash Out</h3>
             <form class="bg-white p-6 rounded-2xl">
                 
@@ -132,6 +132,29 @@
                 <button id="withdraw-btn" class="btn outfit btn-active btn-primary border-0 text-white h-[50px] mt-4 w-full font-semibold text-[18px] rounded-4xl bg-[#0874F2]">Withdraw Money</button>
             </form>
         </div>
+
+        <!-- Transfer Money part -->
+         <div id="transfer-money-parent" class="form" style="display: none;">
+            <h3 class="max-w-lg mx-auto my-8 font-bold text-xl">Transfer Money</h3>
+         </div>
+
+        <!-- Get Bonus part -->
+         <div id="get-bonus-parent" class="form" style="display: none;">
+            <h3 class="max-w-lg mx-auto my-8 font-bold text-xl">Get Bonus</h3>
+         </div>
+
+        <!-- Pay Bill part -->
+         <div id="pay-bill-parent" class="form" style="display: none;">
+            <h3 class="max-w-lg mx-auto my-8 font-bold text-xl">Pay Bill</h3>
+         </div>
+
+        <!-- Transaction part -->
+         <div id="transaction-parent" class="form" style="display: none;">
+            <div class="flex justify-between items-center">
+                <h3 class="my-8 font-bold text-xl">Transactions</h3>
+                <p>View All</p>
+            </div>
+         </div>
 
     </div>
 
