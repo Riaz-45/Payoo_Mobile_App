@@ -86,7 +86,7 @@
     <div class="all-form-sections max-w-lg mx-auto">
 
         <!-- add money part -->
-        <div id="add-money-parent" class="form">
+        <div id="add-money-parent" class="form" style="display: none;">
             <h3 class="max-w-lg mx-auto my-8 font-bold text-xl">Add Money</h3>
             <form class="bg-white p-6 rounded-2xl">
                 <label class="font-medium text-[16px]" for="">Select A Bank</label> <br>
@@ -196,10 +196,14 @@
          </div>
 
         <!-- Transaction part -->
-         <div id="transaction-parent" class="form" style="display: none;">
+         <div id="transaction-parent" class="form">
             <div class="flex justify-between items-center">
                 <h3 class="my-8 font-bold text-xl">Transactions</h3>
-                <p>View All</p>
+                <p class="text-[rgba(8,8,8,0.5)] font-medium">View All</p>
+            </div>
+
+            <div id="transaction-container">
+                
             </div>
          </div>
 

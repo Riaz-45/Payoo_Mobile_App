@@ -1,4 +1,5 @@
 const validPin = 1234;
+const transactionData = [];
 
 
 // function to get input value
@@ -72,6 +73,11 @@ document.getElementById('add-money-btn').addEventListener('click', function(e){
     // const addAmount = parseInt(document.getElementById('add-amount').value);
     const addAmount = getInputValueNumber('add-amount');
 
+    if(addAmount <= 0){
+        alert("invalid amount")
+        return;
+    }
+
     // const addPin = parseInt(document.getElementById('add-pin').value);
     const addPin = getInputValueNumber('add-pin');
     if(addPin !== validPin){
@@ -89,6 +95,15 @@ document.getElementById('add-money-btn').addEventListener('click', function(e){
 
     // document.getElementById('available-balance').innerText = totalNewAvailableBalance;
     setInnerText(totalNewAvailableBalance);
+
+    // transaction part for add money
+    const data = {
+        name: 'Add Money',
+        date: new Date().toLocaleString()
+    }
+
+    transactionData.push(data);
+    console.log(transactionData);
 });
 
 
@@ -121,6 +136,11 @@ document.getElementById('withdraw-btn').addEventListener('click', function(e){
     const availableBalance = getInnerText('available-balance');
     // console.log(cashOutAmount, availableBalance)
 
+    if(cashOutAmount <= 0 && cashOutAmount > availableBalance){
+        alert('invalid amount');
+        return;
+    }
+
     const totalNewAvailableBalance = availableBalance - cashOutAmount;
 
     // console.log(totalNewAvailableBalance);
@@ -128,6 +148,48 @@ document.getElementById('withdraw-btn').addEventListener('click', function(e){
     // document.getElementById('available-balance').innerText = totalNewAvailableBalance;
     setInnerText(totalNewAvailableBalance);
 
+
+    // transaction part for cash out
+
+    const data = {
+        name: 'CashOut',
+        date: new Date().toLocaleString()
+    }
+
+    transactionData.push(data);
+    console.log(transactionData);
+
+})
+
+
+// transaction part
+document.getElementById('transaction-btn').addEventListener('click', function(){
+    const transactionContainer = document.getElementById('transaction-container')
+
+    transactionContainer.innerText = ""
+
+    for (const data of transactionData) {
+    const div = document.createElement('div');
+
+    div.innerHTML = `
+        <div class="bg-white flex items-center justify-between p-3.5 rounded-xl mb-3 border-2 border-[rgba(8,8,8,0.1)]">
+            <div class="flex items-center gap-2">
+                <div class="bg-[rgba(8,8,8,0.05)] rounded-full p-2.5">
+                    <img src="assets/wallet1.png" alt="">
+                </div>
+                <div>
+                    <h1 class="font-semibold text-[18px] text-[rgba(8,8,8,0.7)]">${data.name}</h1>
+                    <p class="text-[rgba(8,8,8,0.7)]">${data.date}</p>
+                </div>
+            </div>
+            <div>
+                <i class="fa-solid fa-ellipsis-vertical text-[rgba(8,8,8,0.7)]"></i>
+            </div>
+        </div>
+    `;
+
+    transactionContainer.appendChild(div);
+}
 })
 
 
@@ -176,6 +238,6 @@ document.getElementById('pay-bill-btn').addEventListener('click', function(){
 
 document.getElementById('transaction-btn').addEventListener('click', function(){
     handleToggle('transaction-parent');
-    
+
     handleButtonToggle('transaction-btn');
 })
